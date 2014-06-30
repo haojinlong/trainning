@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>页 19</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">首页</a> <a href="text17.html">返回</a> <a href="text19.html">继续</a> <a href="text21.html">末页</a> <a href="index.html">摘要</a> <a href="img18.html">图形</a></center><br>
+<h1 style="direction:ltr;">使用技巧二：协同commons-lang3使用</h1>
+<ul><li style="direction:ltr;"><h2>commons-lang3</h2></li>
+<ul><li style="direction:ltr;">介绍：apache下的子项目，提供针对核心java类的一些额外的操作</li>
+<li style="direction:ltr;">地址：<a href="http://commons.apache.org/proper/commons-lang/">http://commons.apache.org/proper/commons-lang/</a></li>
+<li style="direction:ltr;">最新版本：3.3.2</li>
+<li style="direction:ltr;">需要引入的jar包：commons-lang3-3.3.2.jar</li>
+</ul><li style="direction:ltr;"><h2>使用方式</h2></li>
+<ul><li style="direction:ltr;">重写所有JavaBean的toString方法为：</li>
+<ul><li style="direction:ltr;"><i>return ToStringBuilder.reflectionToString(this);</i></li>
+</ul><li style="direction:ltr;">debug时，直接传入相应的JavaBean即可</li>
+<ul><li style="direction:ltr;">logger.debug(“the value of A: {}”, a);</li>
+</ul></ul></ul></body>
+</html>
