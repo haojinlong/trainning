@@ -7,11 +7,13 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
 <center>
-<a href="text0.html">首页</a> <a href="text8.html">返回</a> <a href="text10.html">继续</a> <a href="text18.html">末页</a> <a href="index.html">摘要</a> <a href="img9.html">图形</a></center><br>
+<a href="text0.html">首页</a> <a href="text8.html">返回</a> <a href="text10.html">继续</a> <a href="text27.html">末页</a> <a href="index.html">摘要</a> <a href="img9.html">图形</a></center><br>
 <h1 style="direction:ltr;">Mapper类说明</h1>
-<ul><li style="direction:ltr;"><h2>传统的mybatis(ibatis)中所有的数据读写操作均通过sqlSession来完成，通过传入Mapper配置文件指定的namespace和映射id来进行访问，每次方法的执行都需要输入一长串的字符串用来定位具体的映射，使用很不方便，为此Mapper接口应运而生</h2></li>
-<li style="direction:ltr;"><h2>我们可以通过创建Mapper接口来绑定映射语句，Mapper接口的实例可以通过sqlSession自动生成，这样前端的开发人员只需要调用响应的Mapper接口程序即可</h2></li>
-<ul><li style="direction:ltr;">Mappers are interfaces that you create to bind to your mapped statements. Instances of the mapper interfaces are acquired from the SqlSession</li>
-</ul><li style="direction:ltr;"><h2>使用Mapper接口方式进行mybatis数据存取需要七步工作，前五步与传统的方式一模一样，唯一不同的是需要创建Mapper接口文件，并采用Mapper接口方式进行数据的操作</h2></li>
-</ul></body>
+<ul><li style="direction:ltr;"><h2>传统的mybatis(ibatis)中所有的数据读写操作均通过sqlSession来完成</h2></li>
+<ul><li style="direction:ltr;">每次操作都需要输入Mapper配置文件指定的namespace和操作id</li>
+<li style="direction:ltr;">无法在编译过程中进行类型验证</li>
+<li style="direction:ltr;">……</li>
+</ul><li style="direction:ltr;"><h2>使用Mapper接口来绑定映射语句</h2></li>
+<ul><li style="direction:ltr;">接口的实例可以通过sqlSession自动生成，这样前端的开发人员只需要调用响应的Mapper接口程序即可</li>
+</ul></ul></body>
 </html>
